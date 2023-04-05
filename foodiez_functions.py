@@ -238,28 +238,6 @@ class Foodiez_User_Function():
         json.dump(read_profile,write_file)
         exit()
 
-class Main:
-    def execute(self,log_choice):
-        if log_choice == 1:
-            log.admin_login()
-                
-        elif log_choice == 2:
-            
-            while True:
-                print("\n+---------------------------------------+\n|Enter 1 to Register                    | \n|Enter 2 to Login if already Registered |\n+---------------------------------------+")
-                reg_choice = int(input("Enter Your Choice :- "))
-                if reg_choice == 1:
-                    log.register()
-                elif reg_choice == 2:
-                    log.user_login()
-                else:
-                    print("Invalid Choice")
-                
-
-        else:
-            print('See You Soon ')
-            exit()
-     
        
 choice = Choice()
 foodiez_func = Foodiez_Admin_function()
